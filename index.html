@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosIA.css">
+    <title>Mi Sitio Web</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div class="logo">Mi Sitio</div>
+          <ul class="menu">
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#quien-soy">Quién Soy</a></li>
+            <li class="submenu">
+              <a href="#catalogo">Catálogo</a>
+              <ul class="submenu-content">
+                <li><a href="#caricaturas">Caricaturas</a></li>
+                <li><a href="#paisajes">Paisajes</a></li>
+                <li><a href="#anime">Animé</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="main" class="section">
+      <h2>ACTIVIDAD 1 -PS</h2>
+        <img
+          src="imagenes/consigna.png"
+          alt="Consigna"
+          class="catalog-image"
+        >
+        <a href="https://www.youtube.com/"> Link a video</a>
+    </section>
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2>Contacto</h2>
+        <p>Por favor, déjanos tu información de contacto:</p>
+        <form action="enviar.php" method="POST">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <section id="quien-soy" class="section">
+      <div class="container">
+        <h2>Quién Soy</h2>
+        <p>
+          Soy Iñaki Goyeneche, el creador de esta página web. Me apasiona el
+          diseño web y la programación. Mi objetivo es compartir mi trabajo y
+          mis intereses contigo a través de este sitio.
+        </p>
+        <p>
+          Si tienes alguna pregunta o comentario, no dudes en contactarme a
+          través del formulario de contacto en la sección correspondiente.
+          ¡Espero que disfrutes explorando mi sitio!
+        </p>
+      </div>
+    </section>
+
+    <section id="catalogo" class="section">
+      <h2>Catálogo</h2>
+      <!-- Deja esta sección vacía, se llenará con CSS cuando se haga clic en "Catálogo" -->
+    </section>
+    <section id="caricaturas" class="section">
+      <div class="container">
+        <h2>Caricaturas</h2>
+        <div class="catalog-images">
+          <img
+            src="imagenes/caricatura1.png"
+            alt="Caricatura 1"
+            class="catalog-image"
+          >
+          <img
+            src="imagenes/caricatura2.png"
+            alt="Caricatura 2"
+            class="catalog-image"
+          >
+          <img
+            src="imagenes/caricatura3.png"
+            alt="Caricatura 3"
+            class="catalog-image"
+          >
+          <!-- Agrega más imágenes según sea necesario -->
+        </div>
+      </div>
+    </section>
+
+    <section id="paisajes" class="section">
+      <div class="container">
+        <h2>Paisajes</h2>
+        <div class="catalog-images">
+          <img
+            src="imagenes/paisaje1.png"
+            alt="Paisaje 1"
+            class="catalog-image"
+          >
+          <img
+            src="imagenes/paisaje2.png"
+            alt="Paisaje 2"
+            class="catalog-image"
+          >
+          <img
+            src="imagenes/paisaje3.png"
+            alt="Paisaje 3"
+            class="catalog-image"
+          >
+          <!-- Agrega más imágenes según sea necesario -->
+        </div>
+      </div>
+    </section>
+
+    <section id="anime" class="section">
+      <div class="container">
+        <h2>Animé</h2>
+        <div class="catalog-images">
+          <img src="imagenes/anime1.png" alt="Anime 1" class="catalog-image">
+          <img src="imagenes/anime2.png" alt="Anime 2" class="catalog-image">
+          <img src="imagenes/anime3.png" alt="Anime 3" class="catalog-image">
+          <!-- Agrega más imágenes según sea necesario -->
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
